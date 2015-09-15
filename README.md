@@ -1,4 +1,5 @@
 Nbstore migrate module for v2 to v3
+NBrightBuy DNN e-commerce module v3 https://github.com/leedavi/NBrightBuy
 
 <h2>REQUIREMENT</h2>
 Dnn > V.6<br/>
