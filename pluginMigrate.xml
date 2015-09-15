@@ -1,0 +1,53 @@
+﻿		<genxml>
+			<files />
+			<hidden>
+				<index>99</index>
+			</hidden>
+			<textbox>
+				<ctrl>
+					<![CDATA[migratenbsv2]]>
+				</ctrl>
+				<name>
+					<![CDATA[Migrate NBSv2]]>
+				</name>
+				<icon>
+					<![CDATA[]]>
+				</icon>
+				<group>
+					<![CDATA[Utilities]]>
+				</group>
+				<path>
+					<![CDATA[/DesktopModules/NBright/NBrightBuyMigrate/Import.ascx]]>
+				</path>
+				<help>
+					<![CDATA[]]>
+				</help>
+				<roles>
+					<![CDATA[Manager,Aministrators]]>
+				</roles>
+				<description>
+					<![CDATA[]]>
+				</description>
+				<assembly>
+					<![CDATA[]]>
+				</assembly>
+				<namespaceclass>
+					<![CDATA[]]>
+				</namespaceclass>
+			</textbox>
+			<checkbox>
+				<hidden>
+					<![CDATA[False]]>
+				</hidden>
+				<active>
+					<![CDATA[True]]>
+				</active>
+			</checkbox>
+			<dropdownlist>
+				<providertype selectedtext="UI_x0020_Only">
+					<![CDATA[01]]>
+				</providertype>
+			</dropdownlist>
+			<checkboxlist />
+			<radiobuttonlist />
+		</genxml>
