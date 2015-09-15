@@ -1,0 +1,49 @@
+﻿<dotnetnuke type="Package" version="5.0">
+	<packages>
+		<package name="NBrightBuyMigrate" type="Module" version="1.0.0">
+			<friendlyName>NBrightBuyMigrate</friendlyName>
+			<description>NBrightBuyMigrate: Migrates data from NBSv2 to NBSv3 </description>
+			<iconFile />
+			<owner>
+				<name>David Lee</name>
+				<organization>Nevoweb</organization>
+				<url>www.nevoweb.com</url>
+				<email>info@nevoweb.com</email>
+			</owner>
+			<license>
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+  YOU MAY NOT REDISTRIBUTE, NOT VIEW THE SOURCE CODE, NOT COPY THIS SOFTWARE.  
+			</license>
+			<releaseNotes>v1.0.0</releaseNotes>
+			<components>
+				<component type="ResourceFile">
+					<resourceFiles>
+						<basePath>DesktopModules\NBright\NBrightBuyMigrate</basePath>
+						<resourceFile>
+							<name>NBrightBuyMigrate_Resource.zip</name>
+						</resourceFile>
+					</resourceFiles>
+				</component>
+				<component type="Assembly">
+					<assemblies>
+						<assembly>
+							<path>bin</path>
+							<name>NBrightBuyMigrate.dll</name>
+							<sourceFileName>NBrightBuyMigrate.dll</sourceFileName>
+						</assembly>
+					</assemblies>
+				</component>
+				<component type="File">
+					<files>
+						<basePath>DesktopModules\NBright\NBrightBuy\Plugins</basePath>
+						<file>
+							<path></path>
+							<name>pluginMigrate.xml</name>
+							<sourceFileName>pluginMigrate.xml</sourceFileName>
+						</file>
+					</files>
+				</component>
+			</components>
+		</package>
+	</packages>
+</dotnetnuke>

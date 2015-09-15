@@ -1,0 +1,16 @@
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightBuyMigrate.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightBuyMigrate.pdb
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\DotNetNuke.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightBuy.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightCore.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightDNN.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\SharpZipLib.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\Microsoft.ApplicationBlocks.Data.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightBuy.pdb
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightCore.pdb
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\bin\Release\NBrightDNN.pdb
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\obj\Release\NBrightBuyMigrate.csprojResolveAssemblyReference.cache
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\obj\Release\Nevoweb.DNN.NBrightBuyMigrate.App_LocalResources.Import.ascx.resources
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\obj\Release\NBrightBuyMigrate.csproj.GenerateResource.Cache
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\obj\Release\NBrightBuyMigrate.dll
+D:\archivi_web\www.eighteensound2014.com\www\DesktopModules\NBright\NBrightBuyMigrate\obj\Release\NBrightBuyMigrate.pdb
