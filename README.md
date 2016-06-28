@@ -3,7 +3,7 @@ NBrightBuy DNN e-commerce module v3 https://github.com/leedavi/NBrightBuy
 
 <h2>REQUIREMENT</h2>
 Dnn > V.6<br/>
-Framework 4<br/>
+Framework 4.5<br/>
 nBSTORE V3<br/>
 <hr/>
 <h2>INSTALLATION</h2>
