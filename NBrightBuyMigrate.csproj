@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nevoweb.DNN.NBrightBuyMigrate</RootNamespace>
     <AssemblyName>NBrightBuyMigrate</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\NBrightBuyMigrate.XML</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,21 +33,19 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetNuke">
-      <HintPath>..\..\..\..\..\..\Support\DNN6x\bin\DotNetNuke.dll</HintPath>
+      <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
     </Reference>
-    <Reference Include="NBrightBuy, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="NBrightBuy">
       <HintPath>..\..\..\bin\NBrightBuy.dll</HintPath>
     </Reference>
-    <Reference Include="NBrightCore, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="NBrightCore">
       <HintPath>..\..\..\bin\NBrightCore.dll</HintPath>
     </Reference>
-    <Reference Include="NBrightDNN, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="NBrightDNN">
       <HintPath>..\..\..\bin\NBrightDNN.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -58,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\LogWriter.cs" />
     <Compile Include="Import.ascx.cs">
       <DependentUpon>Import.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -77,7 +79,6 @@
     <EmbeddedResource Include="App_LocalResources\Import.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\" />
     <Folder Include="render\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
