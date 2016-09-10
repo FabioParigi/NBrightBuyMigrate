@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="5.0">
 	<packages>
-		<package name="NBrightBuyMigrate" type="Module" version="1.0.0">
+		<package name="NBrightBuyMigrate" type="Module" version="1.0.1">
 			<friendlyName>NBrightBuyMigrate</friendlyName>
 			<description>NBrightBuyMigrate: Migrates data from NBSv2 to NBSv3 </description>
 			<iconFile />
@@ -14,7 +14,7 @@
   THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
   YOU MAY NOT REDISTRIBUTE, NOT VIEW THE SOURCE CODE, NOT COPY THIS SOFTWARE.  
 			</license>
-			<releaseNotes>v1.0.0</releaseNotes>
+			<releaseNotes>v1.0.1</releaseNotes>
 			<components>
 				<component type="ResourceFile">
 					<resourceFiles>

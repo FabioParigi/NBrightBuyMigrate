@@ -324,6 +324,7 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                     if (nodList != null)
                     {
                         var productid = -1;
+                        var prodname = "";
                         foreach (XmlNode nod in nodList)
                         {
 
@@ -341,6 +342,7 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                                     var productData = new ProductData(productid, lang);
 
                                     productid = productData.Info.ItemID; // set productid, so we have the id if it goes wrong.
+                                    prodname = productData.ProductName;
 
                                     // clear down existing XML data
                                     var i = new NBrightInfo(true);
@@ -388,6 +390,7 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                                     ////////////////////////////// CUSTOM FIELDS /////////////////////////////////////
                                     ////////////////////////////// CUSTOM FIELDS /////////////////////////////////////
                                     ////////////////////////////// CUSTOM FIELDS /////////////////////////////////////
+                                    #region "Custom Fields"
 
                                     // Custom Fields the Custom fields in Nbstore are stored in XmlData xml file area.
 
@@ -545,7 +548,7 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                                         }
                                     }
 
-
+                                    #endregion
                                     ////////////////////////////// END CUSTOM FIELDS /////////////////////////////////////
                                     ////////////////////////////// END CUSTOM FIELDS /////////////////////////////////////
                                     ////////////////////////////// END CUSTOM FIELDS /////////////////////////////////////                            
@@ -761,7 +764,7 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                             }
                             catch (Exception e)
                             {
-                                var logMessage = "PRODUCTS: ProductId: " + productid.ToString() + " : " + e.ToString();
+                                var logMessage = "PRODUCTS: " + prodname +  " ProductId: " + productid.ToString() + " : " + e.ToString();
                                 LogOutput.LogWrite(logMessage);
                             }
 
