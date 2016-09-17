@@ -20,9 +20,9 @@ and all the docs from \Portals\0\productdocs to \Portals\0\NBStore\docs
 
 The interface has 2 button for importing. 
 
-"Import new data migration" - This will take a v2 export data file and import it into v3.  You should use this button if it's a fresh import of data. (This is designed to loop and to the import 2 times, so all cross refs for categories and products are correctly created)
+"Import new data migration" - This will take a v2 export data file and import it into v3.  You should use this button if it's a fresh import of data. (This is designed to loop and do the import 2 times, so all cross refs for categories and products are correctly created)
 
-"Update existing migrated data" - if you've already imported the data file, you can use this option to redo the import is anything got missed. (Just makes things quicker, becuase in this case we don;t need a double loop to link refs) 
+"Update existing migrated data" - If you've already imported the data file, you can use this option to redo the import if anything got missed. (Just makes things quicker, becuase in this case we don't need a double loop to link refs) 
 
  
 <hr/>
