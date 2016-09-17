@@ -120,8 +120,17 @@
   <data name="DataXML.Text" xml:space="preserve">
     <value>NBSv2 XML Export Data</value>
   </data>
+  <data name="Import.Text" xml:space="preserve">
+    <value>Import new data migration</value>
+  </data>
   <data name="Import_ok.Text" xml:space="preserve">
     <value>Import Completed</value>
+  </data>
+  <data name="Update.Text" xml:space="preserve">
+    <value>Update existing migrated data</value>
+  </data>
+  <data name="updatemsg.Text" xml:space="preserve">
+    <value>If the import of THIS data has already been done before you can use the update function.  This will run quicker than the full import.</value>
   </data>
   <data name="xmlloadfail_fail.Text" xml:space="preserve">
     <value>XML Load Failure.  Please check you have selected a valid XML file.</value>

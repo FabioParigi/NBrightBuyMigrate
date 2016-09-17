@@ -30,8 +30,9 @@
 		  <i class="fa fa-bars"></i>
 		</a>
 		<div class="actionbuttonwrapper">
-			[<tag id="cmdImport" type="linkbutton" cssclass="btn btn-primary importbutton" resourcekey="General.Import" commandname="import" />] 
-	    </div>
+		    [<tag id="cmdImport" type="linkbutton" cssclass="btn btn-primary importbutton" resourcekey="Import.Import" commandname="import"/>]
+            [<tag id="cmdImport2" type="linkbutton" cssclass="btn btn-primary" resourcekey="Import.Update" commandname="Update" />]
+		</div>
 	</div>
 	<div class="col-xs-3 col-sm-3 top-panel-right">
 		<!-- No language selector on this page-->
@@ -60,11 +61,16 @@
 				        <label class="col-sm-3 control-label">[<tag type="valueof" resourcekey="Import.DataXML" />]</label>
 				        <div class="col-sm-5">
 				            <div class="dnnFormItem">
-				                 [<tag id="datafile" type="fileupload" cssclass="form-control" textwidth="0" separator=" " />]
+				                [<tag id="datafile" type="fileupload" cssclass="form-control" textwidth="0" separator=" "/>]
 				            </div>
 				        </div>
+                        <div class="col-sm-10">
+                            <div class="dnnFormItem">
+                                <br/>
+                                <label>[<tag type="valueof" resourcekey="Import.updatemsg" />]</label>
+                            </div>
+                        </div>
 				    </div>
-
 
 				</div>
 			</div>
@@ -81,9 +87,6 @@
 			<div class="box-content">
 				<div class="col-sm-6">
 					[<tag id="cmdImport1" type="linkbutton" cssclass="btn btn-primary" resourcekey="General.Import" commandname="import" />] 
-				</div>
-				<div class="col-sm-6 text-right">
-				<!-- No language selector on this page-->
 				</div>
 				<div class="clearfix"></div>
 			</div>

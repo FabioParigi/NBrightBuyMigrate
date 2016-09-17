@@ -134,7 +134,27 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                     var importXML = GenXmlFunctions.GetGenXml(rpData, "", StoreSettings.Current.FolderTempMapPath);
                     var nbi = new NBrightInfo(false);
                     nbi.XMLData = importXML;
-                    DoImport(nbi);
+
+                    // we're going to loop the records 2 times.
+                    // This is becuase the order of import could mean the xrefitemid and parentitemid cannot be updated on first pass.
+                    // doing this import 2 times ensures we get all records existing and hence we can create valid  xrefitemid and parentitemid fields.
+
+                    for (int i = 0; i < 2; i++)
+                    {
+                        DoImport(nbi);
+                    }
+
+                    Response.Redirect(NBrightBuyUtils.AdminUrl(TabId, param), true);
+                    break;
+                case "update":
+                    param[0] = "";
+                    var importXML2 = GenXmlFunctions.GetGenXml(rpData, "", StoreSettings.Current.FolderTempMapPath);
+                    var nbi2 = new NBrightInfo(false);
+                    nbi2.XMLData = importXML2;
+
+                    // this is a update to existsing data, so only need run once.
+                    DoImport(nbi2);
+
                     Response.Redirect(NBrightBuyUtils.AdminUrl(TabId, param), true);
                     break;
                 case "cancel":
@@ -374,6 +394,7 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                                     var pL_Description = nod.SelectSingleNode("NB_Store_ProductsInfo/Description").InnerText;
                                     var pL_SEOName = nod.SelectSingleNode("NB_Store_ProductsInfo/SEOName").InnerText;
                                     var pL_TagWords = nod.SelectSingleNode("NB_Store_ProductsInfo/TagWords").InnerText;
+                                    var pL_Desc = nod.SelectSingleNode("NB_Store_ProductsInfo/Description").InnerText;
 
                                     if (pD_ProductRef != null) productData.DataRecord.SetXmlProperty("genxml/textbox/txtproductref", pD_ProductRef);
                                     if (pD_Manufacturer != null) productData.DataRecord.SetXmlProperty("genxml/textbox/customorder", pD_Manufacturer);
@@ -384,7 +405,14 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
                                     if (pL_SEOName != null) productData.DataLangRecord.SetXmlProperty("genxml/textbox/txtseoname", pL_SEOName);
                                     if (pL_SEOName != null) productData.DataLangRecord.SetXmlProperty("genxml/textbox/txtseopagetitle", pL_SEOName);
                                     if (pL_TagWords != null) productData.DataLangRecord.SetXmlProperty("genxml/textbox/txttagwords", pL_TagWords);
+
                                     //edt
+
+                                    if (pL_Desc != null)
+                                    {
+                                        productData.DataLangRecord.SetXmlProperty("genxml/edt", "");
+                                        productData.DataLangRecord.SetXmlProperty("genxml/edt/description", pL_Desc);
+                                    }
 
 
                                     ////////////////////////////// CUSTOM FIELDS /////////////////////////////////////

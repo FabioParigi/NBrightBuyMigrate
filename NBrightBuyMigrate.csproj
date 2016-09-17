@@ -81,6 +81,9 @@
   <ItemGroup>
     <Folder Include="render\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Installation\NBrightBuyMigrate.dnn" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetFileName)" "..\..\..\..\..\bin\$(TargetFileName)"
