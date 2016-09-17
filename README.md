@@ -4,7 +4,7 @@ NBrightBuy DNN e-commerce module v3 https://github.com/leedavi/NBrightBuy
 <h2>REQUIREMENT</h2>
 Dnn > V.6<br/>
 Framework 4.5<br/>
-nBSTORE V3<br/>
+NBSv3<br/>
 <hr/>
 <h2>INSTALLATION</h2>
 On the /Installation Directory you find NBrightBuyMigrate_1.0.0_Install.zip<br/>
@@ -17,7 +17,14 @@ and all the docs from \Portals\0\productdocs to \Portals\0\NBStore\docs
 
 <hr/>
 <h2>NOTE</h2>
-The migrate plugin is under develop, I have tested it on 3/4 catalogues, so in some import the category aren't connected to the products, please make another time the import and all products are related to the right categories
+
+The interface has 2 button for importing. 
+
+"Import new data migration" - This will take a v2 export data file and import it into v3.  You should use this button if it's a fresh import of data. (This is designed to loop and to the import 2 times, so all cross refs for categories and products are correctly created)
+
+"Update existing migrated data" - if you've already imported the data file, you can use this option to redo the import is anything got missed. (Just makes things quicker, becuase in this case we don;t need a double loop to link refs) 
+
+ 
 <hr/>
 <h2>CUSTOM FIELDS</h2>
 For modify the custom field use Visual Studio 2012 and source files<br/>
