@@ -24,6 +24,11 @@ The interface has 2 button for importing.
 
 "Update existing migrated data" - If you've already imported the data file, you can use this option to redo the import if anything got missed. (Just makes things quicker, becuase in this case we don't need a double loop to link refs) 
 
+It might be required to up the limits in the web.config "httpRuntime".  Also the limits for connection time in IIS might need to be adjusted to import and process large files.
+
+If you can it's better to do the import on a seperate development system and then export the data from NBS using the v3 export functionality and then import into the final system.
+
+Images can be copied directlty into the NBStore/images folder and then do a store validation on the portal from BO>Admin>Tools.  This will realign and images to the correct place on the new system.
  
 <hr/>
 <h2>CUSTOM FIELDS</h2>

@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="5.0">
 	<packages>
-		<package name="NBrightBuyMigrate" type="Module" version="1.0.2">
+		<package name="NBrightBuyMigrate" type="Module" version="1.0.3">
 			<friendlyName>NBrightBuyMigrate</friendlyName>
 			<description>NBrightBuyMigrate: Migrates data from NBSv2 to NBSv3 </description>
 			<iconFile />
