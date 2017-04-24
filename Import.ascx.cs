@@ -632,8 +632,11 @@ namespace Nevoweb.DNN.NBrightBuyMigrate
 
                                         if (ProductID == guidKey)
                                         {
-                                            var newCategoryId = categoryListIDGiud[CategoryID];
-                                            productData.AddCategory(newCategoryId);
+                                            if (categoryListIDGiud.ContainsKey(CategoryID))
+                                            {
+                                                var newCategoryId = categoryListIDGiud[CategoryID];
+                                                productData.AddCategory(newCategoryId);
+                                            }
                                         }
 
                                     }
